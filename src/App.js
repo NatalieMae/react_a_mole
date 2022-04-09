@@ -1,11 +1,11 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
 // import Mole from "./Mole.js";
 import MoleContainer from './MoleContainer';
 // import EmptySpot from "./EmptySpot.js";
 import './App.css';
 
 function App() {
-  let [score, setScore] = useState()
+  let [score, setScore] = useState(0)
 
   const createMoleHill = () => {
     let hills = []
@@ -17,6 +17,8 @@ function App() {
         score = {score} />
       )
     }
+  const displayMoleHill = () => {
+    if (MoleContainer.Mole = 'true')  
       return (
         <div>
           {hills}
@@ -28,9 +30,10 @@ function App() {
       <h1>React-a-Mole!</h1>
       {score}
       {createMoleHill()}
+      {displayMoleHill()}
       <MoleContainer/>
     </div>
   )
-}  
+} }
 
 export default App;
